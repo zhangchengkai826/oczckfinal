@@ -13,6 +13,7 @@ class InfoManViewController: UIViewController, UITableViewDataSource, UITableVie
 
     let cellIdentifier = "student"
     
+    @IBOutlet weak var tableView: UITableView!
     var fetchedResultsController: NSFetchedResultsController<Student>?
     
     func numberOfSectionsInTableView(sender: UITableView) -> Int {
@@ -44,6 +45,11 @@ class InfoManViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        updateFetchResults()
+        // Do any additional setup after loading the view.
+    }
+    
+    func updateFetchResults() {
         let context = AppDelegate.viewContext
         
         let request: NSFetchRequest<Student> = Student.fetchRequest()
@@ -54,9 +60,8 @@ class InfoManViewController: UIViewController, UITableViewDataSource, UITableVie
         fetchedResultsController = NSFetchedResultsController<Student>(
             fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: "student")
         try? fetchedResultsController?.performFetch()
-        // Do any additional setup after loading the view.
+        tableView.reloadData()
     }
-    
 
     /*
     // MARK: - Navigation

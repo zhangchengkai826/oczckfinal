@@ -84,6 +84,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="学生信息管理" image="IC_InfoMan" id="d7O-lQ-AlH"/>
                     <navigationItem key="navigationItem" title="学生信息管理" id="2R3-YQ-yOK"/>
+                    <connections>
+                        <outlet property="tableView" destination="OVe-Ff-rDv" id="s86-w6-zN4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPH-A2-zew" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

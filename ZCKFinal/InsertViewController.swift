@@ -33,6 +33,10 @@ class InsertViewController: UIViewController {
         student.hometown = hometown.text
         student.phone = Int64(phone.text!)!
         student.email = email.text
+        if let vctlers = navigationController?.viewControllers {
+            let parent = vctlers[vctlers.count-2] as? InfoManViewController
+            parent?.updateFetchResults()
+        }
         
         navigationController?.popViewController(animated: true)
     }
