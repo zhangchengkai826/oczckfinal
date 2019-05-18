@@ -13,6 +13,9 @@
 		4EF1392222900A9B00C7DDEF /* ZCKFinal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1392022900A9B00C7DDEF /* ZCKFinal.xcdatamodeld */; };
 		4EF1392422900AA000C7DDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF1392322900AA000C7DDEF /* Assets.xcassets */; };
 		4EF1392722900AA000C7DDEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF1392522900AA000C7DDEF /* LaunchScreen.storyboard */; };
+		4EF1393122900BF400C7DDEF /* InfoManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1393022900BF400C7DDEF /* InfoManViewController.swift */; };
+		4EF1393322900C1000C7DDEF /* ScoreFetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1393222900C1000C7DDEF /* ScoreFetchViewController.swift */; };
+		4EF1393522900C2400C7DDEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1393422900C2400C7DDEF /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		4EF1392322900AA000C7DDEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EF1392622900AA000C7DDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EF1392822900AA000C7DDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EF1393022900BF400C7DDEF /* InfoManViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoManViewController.swift; sourceTree = "<group>"; };
+		4EF1393222900C1000C7DDEF /* ScoreFetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreFetchViewController.swift; sourceTree = "<group>"; };
+		4EF1393422900C2400C7DDEF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				4EF1392522900AA000C7DDEF /* LaunchScreen.storyboard */,
 				4EF1392822900AA000C7DDEF /* Info.plist */,
 				4EF1392022900A9B00C7DDEF /* ZCKFinal.xcdatamodeld */,
+				4EF1393022900BF400C7DDEF /* InfoManViewController.swift */,
+				4EF1393222900C1000C7DDEF /* ScoreFetchViewController.swift */,
+				4EF1393422900C2400C7DDEF /* LoginViewController.swift */,
 			);
 			path = ZCKFinal;
 			sourceTree = "<group>";
@@ -138,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF1393522900C2400C7DDEF /* LoginViewController.swift in Sources */,
+				4EF1393322900C1000C7DDEF /* ScoreFetchViewController.swift in Sources */,
 				4EF1392222900A9B00C7DDEF /* ZCKFinal.xcdatamodeld in Sources */,
+				4EF1393122900BF400C7DDEF /* InfoManViewController.swift in Sources */,
 				4EF1391C22900A9B00C7DDEF /* ViewController.swift in Sources */,
 				4EF1391A22900A9B00C7DDEF /* AppDelegate.swift in Sources */,
 			);

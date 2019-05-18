@@ -1,24 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--成绩查询-->
+        <scene sceneID="2fY-GP-jBD">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="sXw-4F-fqX" customClass="ScoreFetchViewController" customModule="ZCKFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="baV-ii-1U6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GgY-5E-QN9"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="成绩查询" image="IC_ScoreFetch" id="23D-zZ-oht"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2c4-xt-i6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="97" y="114"/>
+        </scene>
+        <!--学生信息管理-->
+        <scene sceneID="nZS-6f-cGv">
+            <objects>
+                <viewController id="vY6-qc-DsD" customClass="InfoManViewController" customModule="ZCKFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ed5-lS-BI6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YKu-US-n85"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="学生信息管理" image="IC_InfoMan" id="d7O-lQ-AlH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vPH-A2-zew" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="-551"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8M9-NY-dCV">
+            <objects>
+                <tabBarController id="eAG-FD-13h" customClass="ViewController" customModule="ZCKFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H4N-g4-Idl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vY6-qc-DsD" kind="relationship" relationship="viewControllers" id="ywv-CG-hdu"/>
+                        <segue destination="sXw-4F-fqX" kind="relationship" relationship="viewControllers" id="kFS-RA-4bK"/>
+                        <segue destination="Iqc-wO-pNF" kind="relationship" relationship="viewControllers" id="WnT-rv-apP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5EI-NB-YkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-855" y="-219"/>
+        </scene>
+        <!--用户-->
+        <scene sceneID="BR5-UV-i5t">
+            <objects>
+                <viewController id="Iqc-wO-pNF" customClass="LoginViewController" customModule="ZCKFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NMF-R9-Nua">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2tc-hz-Ffe"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="用户" image="IC_Login" id="ZN9-ll-Y8p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yL0-3b-y3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="994"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IC_InfoMan" width="30" height="30"/>
+        <image name="IC_Login" width="30" height="30"/>
+        <image name="IC_ScoreFetch" width="30" height="30"/>
+    </resources>
 </document>
