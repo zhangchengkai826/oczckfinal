@@ -1,5 +1,5 @@
 //
-//  InfoManViewController.swift
+//  InsertViewController.swift
 //  ZCKFinal
 //
 //  Created by iqra on 2019/5/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InfoManViewController: UIViewController {
+class InsertViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +26,5 @@ class InfoManViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "insert") {
-            let dest = segue.destination as! InsertViewController;
-            dest.navigationItem.title = "添加新学生";
-        }
-    }
 
 }

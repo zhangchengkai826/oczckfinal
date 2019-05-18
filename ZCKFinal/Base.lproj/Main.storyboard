@@ -46,6 +46,9 @@
                                     <constraint firstAttribute="width" constant="31" id="LAI-nW-TJK"/>
                                 </constraints>
                                 <state key="normal" title="增加"/>
+                                <connections>
+                                    <segue destination="Tjd-JE-FaM" kind="show" identifier="insert" id="IPA-I4-NFp"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OVe-Ff-rDv">
                                 <rect key="frame" x="16" y="102" width="343" height="516"/>
@@ -80,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPH-A2-zew" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96.799999999999997" y="-551.87406296851577"/>
+            <point key="canvasLocation" x="380" y="-525"/>
         </scene>
         <!--学生信息管理-->
         <scene sceneID="AMW-Lq-0XY">
@@ -98,6 +101,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NFv-NA-mt6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="111" y="-1299"/>
+        </scene>
+        <!--Insert View Controller-->
+        <scene sceneID="Rp8-JZ-uL5">
+            <objects>
+                <viewController id="Tjd-JE-FaM" customClass="InsertViewController" customModule="ZCKFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F1n-lV-tye">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PmY-8k-rja"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4mJ-zH-e4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="-1399"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8M9-NY-dCV">

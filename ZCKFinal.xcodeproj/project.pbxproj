@@ -16,6 +16,7 @@
 		4EF1393122900BF400C7DDEF /* InfoManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1393022900BF400C7DDEF /* InfoManViewController.swift */; };
 		4EF1393322900C1000C7DDEF /* ScoreFetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1393222900C1000C7DDEF /* ScoreFetchViewController.swift */; };
 		4EF1393522900C2400C7DDEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1393422900C2400C7DDEF /* LoginViewController.swift */; };
+		4EF139372290175200C7DDEF /* InsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF139362290175200C7DDEF /* InsertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4EF1393022900BF400C7DDEF /* InfoManViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoManViewController.swift; sourceTree = "<group>"; };
 		4EF1393222900C1000C7DDEF /* ScoreFetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreFetchViewController.swift; sourceTree = "<group>"; };
 		4EF1393422900C2400C7DDEF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4EF139362290175200C7DDEF /* InsertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				4EF1393022900BF400C7DDEF /* InfoManViewController.swift */,
 				4EF1393222900C1000C7DDEF /* ScoreFetchViewController.swift */,
 				4EF1393422900C2400C7DDEF /* LoginViewController.swift */,
+				4EF139362290175200C7DDEF /* InsertViewController.swift */,
 			);
 			path = ZCKFinal;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				4EF1393122900BF400C7DDEF /* InfoManViewController.swift in Sources */,
 				4EF1391C22900A9B00C7DDEF /* ViewController.swift in Sources */,
 				4EF1391A22900A9B00C7DDEF /* AppDelegate.swift in Sources */,
+				4EF139372290175200C7DDEF /* InsertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
