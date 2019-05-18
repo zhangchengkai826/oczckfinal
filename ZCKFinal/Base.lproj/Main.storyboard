@@ -35,13 +35,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3J-o5-VmX">
-                                <rect key="frame" x="16" y="64" width="265" height="30"/>
+                                <rect key="frame" x="16" y="72" width="265" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dn-0C-BXe">
-                                <rect key="frame" x="328" y="64" width="31" height="30"/>
+                                <rect key="frame" x="328" y="72" width="31" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="31" id="LAI-nW-TJK"/>
                                 </constraints>
@@ -51,11 +51,15 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OVe-Ff-rDv">
-                                <rect key="frame" x="16" y="102" width="343" height="516"/>
+                                <rect key="frame" x="16" y="110" width="343" height="508"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vY6-qc-DsD" id="7IF-G6-L53"/>
+                                    <outlet property="delegate" destination="vY6-qc-DsD" id="AeZ-ih-yKg"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTF-lh-jdl">
-                                <rect key="frame" x="289" y="64" width="31" height="30"/>
+                                <rect key="frame" x="289" y="72" width="31" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="31" id="iig-uk-5zE"/>
                                 </constraints>
@@ -73,8 +77,8 @@
                             <constraint firstItem="ZTF-lh-jdl" firstAttribute="centerY" secondItem="e3J-o5-VmX" secondAttribute="centerY" id="dzj-UY-Tva"/>
                             <constraint firstItem="4Dn-0C-BXe" firstAttribute="centerY" secondItem="e3J-o5-VmX" secondAttribute="centerY" id="njh-Rh-Ph9"/>
                             <constraint firstItem="OVe-Ff-rDv" firstAttribute="leading" secondItem="YKu-US-n85" secondAttribute="leading" constant="16" id="qvJ-en-DTQ"/>
+                            <constraint firstItem="e3J-o5-VmX" firstAttribute="top" secondItem="YKu-US-n85" secondAttribute="top" constant="8" id="tPl-Vk-82r"/>
                             <constraint firstItem="OVe-Ff-rDv" firstAttribute="top" secondItem="e3J-o5-VmX" secondAttribute="bottom" constant="8" id="xj7-aN-rHS"/>
-                            <constraint firstItem="e3J-o5-VmX" firstAttribute="top" secondItem="YKu-US-n85" secondAttribute="top" id="y7V-1T-dDH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YKu-US-n85"/>
                     </view>
@@ -83,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPH-A2-zew" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="-525"/>
+            <point key="canvasLocation" x="385" y="-527"/>
         </scene>
         <!--学生信息管理-->
         <scene sceneID="AMW-Lq-0XY">
@@ -109,9 +113,85 @@
                     <view key="view" contentMode="scaleToFill" id="F1n-lV-tye">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zyk-aN-ieX">
+                                <rect key="frame" x="16" y="80" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="学号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N64-4N-1v3">
+                                <rect key="frame" x="16" y="142" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="学院" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gny-R2-gXE">
+                                <rect key="frame" x="16" y="204" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="籍贯" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vr8-Vr-7eL">
+                                <rect key="frame" x="16" y="266" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="电话" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TQw-3r-9L2">
+                                <rect key="frame" x="16" y="328" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyU-1j-5TK">
+                                <rect key="frame" x="16" y="572" width="343" height="30"/>
+                                <state key="normal" title="提交"/>
+                                <connections>
+                                    <action selector="submit:" destination="Tjd-JE-FaM" eventType="touchUpInside" id="I5o-0y-qVU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="电邮" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VXL-VA-5Hz">
+                                <rect key="frame" x="16" y="390" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PmY-8k-rja" firstAttribute="trailing" secondItem="Zyk-aN-ieX" secondAttribute="trailing" constant="16" id="1Ly-aO-0nW"/>
+                            <constraint firstItem="Zyk-aN-ieX" firstAttribute="top" secondItem="PmY-8k-rja" secondAttribute="top" constant="16" id="3eZ-4R-E24"/>
+                            <constraint firstItem="Zyk-aN-ieX" firstAttribute="leading" secondItem="PmY-8k-rja" secondAttribute="leading" constant="16" id="3kq-Qd-LJI"/>
+                            <constraint firstItem="PmY-8k-rja" firstAttribute="bottom" secondItem="YyU-1j-5TK" secondAttribute="bottom" constant="16" id="4N7-3d-qMn"/>
+                            <constraint firstItem="YyU-1j-5TK" firstAttribute="centerX" secondItem="Zyk-aN-ieX" secondAttribute="centerX" id="6QG-zI-27Y"/>
+                            <constraint firstItem="TQw-3r-9L2" firstAttribute="centerX" secondItem="Zyk-aN-ieX" secondAttribute="centerX" id="Bp2-Mc-u9r"/>
+                            <constraint firstItem="Vr8-Vr-7eL" firstAttribute="width" secondItem="Zyk-aN-ieX" secondAttribute="width" id="Doe-Za-z7O"/>
+                            <constraint firstItem="VXL-VA-5Hz" firstAttribute="width" secondItem="Zyk-aN-ieX" secondAttribute="width" id="MfU-pV-Vxt"/>
+                            <constraint firstItem="Vr8-Vr-7eL" firstAttribute="top" secondItem="gny-R2-gXE" secondAttribute="bottom" constant="32" id="PF4-YJ-llW"/>
+                            <constraint firstItem="N64-4N-1v3" firstAttribute="width" secondItem="Zyk-aN-ieX" secondAttribute="width" id="UKa-j5-XPu"/>
+                            <constraint firstItem="gny-R2-gXE" firstAttribute="top" secondItem="N64-4N-1v3" secondAttribute="bottom" constant="32" id="UNj-Fw-vhl"/>
+                            <constraint firstItem="TQw-3r-9L2" firstAttribute="top" secondItem="Vr8-Vr-7eL" secondAttribute="bottom" constant="32" id="UYX-5c-RYc"/>
+                            <constraint firstItem="Vr8-Vr-7eL" firstAttribute="centerX" secondItem="Zyk-aN-ieX" secondAttribute="centerX" id="VnO-yd-Kmu"/>
+                            <constraint firstItem="YyU-1j-5TK" firstAttribute="width" secondItem="Zyk-aN-ieX" secondAttribute="width" id="bCW-qs-M1i"/>
+                            <constraint firstItem="VXL-VA-5Hz" firstAttribute="centerX" secondItem="Zyk-aN-ieX" secondAttribute="centerX" id="bGg-HR-T6Z"/>
+                            <constraint firstItem="N64-4N-1v3" firstAttribute="top" secondItem="Zyk-aN-ieX" secondAttribute="bottom" constant="32" id="dcm-hD-lSo"/>
+                            <constraint firstItem="N64-4N-1v3" firstAttribute="centerX" secondItem="Zyk-aN-ieX" secondAttribute="centerX" id="fQH-cy-14H"/>
+                            <constraint firstItem="VXL-VA-5Hz" firstAttribute="top" secondItem="TQw-3r-9L2" secondAttribute="bottom" constant="32" id="mkl-e8-d4Y"/>
+                            <constraint firstItem="gny-R2-gXE" firstAttribute="centerX" secondItem="Zyk-aN-ieX" secondAttribute="centerX" id="om0-uv-8cW"/>
+                            <constraint firstItem="TQw-3r-9L2" firstAttribute="width" secondItem="Zyk-aN-ieX" secondAttribute="width" id="qva-8o-8Ae"/>
+                            <constraint firstItem="gny-R2-gXE" firstAttribute="width" secondItem="Zyk-aN-ieX" secondAttribute="width" id="uvr-9s-sng"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PmY-8k-rja"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="VXL-VA-5Hz" id="tQu-Kd-yTk"/>
+                        <outlet property="hometown" destination="Vr8-Vr-7eL" id="whu-Zx-yO5"/>
+                        <outlet property="id" destination="N64-4N-1v3" id="luP-L7-a4f"/>
+                        <outlet property="name" destination="Zyk-aN-ieX" id="PQ7-9w-uIo"/>
+                        <outlet property="phone" destination="TQw-3r-9L2" id="Dfg-nh-qbK"/>
+                        <outlet property="school" destination="gny-R2-gXE" id="1xd-Fh-20e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4mJ-zH-e4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

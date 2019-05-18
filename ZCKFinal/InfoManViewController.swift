@@ -7,12 +7,53 @@
 //
 
 import UIKit
+import CoreData
 
-class InfoManViewController: UIViewController {
+class InfoManViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let cellIdentifier = "student"
+    
+    var fetchedResultsController: NSFetchedResultsController<Student>?
+    
+    func numberOfSectionsInTableView(sender: UITableView) -> Int {
+        return fetchedResultsController?.sections?.count ?? 1
+    }
+    
+    func tableView(_ sender: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let sections = fetchedResultsController?.sections, sections.count > 0 {
+            return sections[section].numberOfObjects
+        } else {
+            return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
+        if(cell == nil) {
+            cell = UITableViewCell(
+                style: UITableViewCell.CellStyle.default,
+                reuseIdentifier: cellIdentifier
+            )
+        }
+        if let obj = fetchedResultsController?.object(at: indexPath) {
+            cell?.textLabel?.text = obj.name
+        }
+        return cell!
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let context = AppDelegate.viewContext
+        
+        let request: NSFetchRequest<Student> = Student.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(
+            key: "name", ascending: true,
+            selector: #selector(NSString.localizedStandardCompare(_:))
+            )]
+        fetchedResultsController = NSFetchedResultsController<Student>(
+            fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: "student")
+        try? fetchedResultsController?.performFetch()
         // Do any additional setup after loading the view.
     }
     

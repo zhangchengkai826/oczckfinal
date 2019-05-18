@@ -17,6 +17,7 @@
 		4EF1393322900C1000C7DDEF /* ScoreFetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1393222900C1000C7DDEF /* ScoreFetchViewController.swift */; };
 		4EF1393522900C2400C7DDEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1393422900C2400C7DDEF /* LoginViewController.swift */; };
 		4EF139372290175200C7DDEF /* InsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF139362290175200C7DDEF /* InsertViewController.swift */; };
+		4EF13939229042A300C7DDEF /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF13938229042A300C7DDEF /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4EF1393222900C1000C7DDEF /* ScoreFetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreFetchViewController.swift; sourceTree = "<group>"; };
 		4EF1393422900C2400C7DDEF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4EF139362290175200C7DDEF /* InsertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertViewController.swift; sourceTree = "<group>"; };
+		4EF13938229042A300C7DDEF /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				4EF1393222900C1000C7DDEF /* ScoreFetchViewController.swift */,
 				4EF1393422900C2400C7DDEF /* LoginViewController.swift */,
 				4EF139362290175200C7DDEF /* InsertViewController.swift */,
+				4EF13938229042A300C7DDEF /* Student.swift */,
 			);
 			path = ZCKFinal;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				4EF1391C22900A9B00C7DDEF /* ViewController.swift in Sources */,
 				4EF1391A22900A9B00C7DDEF /* AppDelegate.swift in Sources */,
 				4EF139372290175200C7DDEF /* InsertViewController.swift in Sources */,
+				4EF13939229042A300C7DDEF /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

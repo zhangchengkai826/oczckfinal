@@ -17,6 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let context = AppDelegate.viewContext
+        var student = Student(context: context)
+        student.name = "Chengkai Zhang"
+        student.id = 2017302580093
+        student.school = "School of Computer Science"
+        student.hometown = "Hangzhou"
+        student.phone = 15927310675
+        student.email = "15927310675@163.com"
+        
+        student = Student(context: context)
+        student.name = "San Zhang"
+        student.id = 2017302581923
+        student.school = "School of Computer Science"
+        student.hometown = "Wuhan"
+        student.phone = 15968930875
+        student.email = "15968930875@126.com"
+        
         return true
     }
 
@@ -88,6 +106,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+    
+    static var persistentContainer: NSPersistentContainer {
+        return (UIApplication.shared.delegate as! AppDelegate).persistentContainer
+    }
+    
+    static var viewContext: NSManagedObjectContext {
+        return persistentContainer.viewContext
+    }
 }
 
