@@ -19,21 +19,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let context = AppDelegate.viewContext
-        var student = Student(context: context)
-        student.name = "Chengkai Zhang"
-        student.id = 2017302580093
-        student.school = "School of Computer Science"
-        student.hometown = "Hangzhou"
-        student.phone = 15927310675
-        student.email = "15927310675@163.com"
+        let student1 = Student(context: context)
+        student1.name = "Chengkai Zhang"
+        student1.id = 2017302580093
+        student1.school = "School of Computer Science"
+        student1.hometown = "Hangzhou"
+        student1.phone = 15927310675
+        student1.email = "15927310675@163.com"
         
-        student = Student(context: context)
-        student.name = "San Zhang"
-        student.id = 2017302581923
-        student.school = "School of Computer Science"
-        student.hometown = "Wuhan"
-        student.phone = 15968930875
-        student.email = "15968930875@126.com"
+        let student2 = Student(context: context)
+        student2.name = "San Zhang"
+        student2.id = 2017302581923
+        student2.school = "School of Computer Science"
+        student2.hometown = "Wuhan"
+        student2.phone = 15968930875
+        student2.email = "15968930875@126.com"
+        
+        var score = Score(context: context)
+        score.subject = "高等数学"
+        score.score = 95
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "大学物理"
+        score.score = 98
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "高等数学"
+        score.score = 92
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "大学英语"
+        score.score = 96
+        score.student = student2
+        
+        var account = Account(context: context)
+        account.username = "zck"
+        account.passwd = "123abc"
+        
+        account = Account(context: context)
+        account.username = "zs"
+        account.passwd = "654xyz"
         
         return true
     }
