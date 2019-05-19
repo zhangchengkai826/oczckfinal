@@ -66,6 +66,14 @@ class DetailViewController: UIViewController {
             modifyButton.setTitle("提交", for: .normal)
             deleteButton.isEnabled = false
         } else {
+            if id.text == nil || school.text == nil || hometown.text == nil || phone.text == nil || email.text == nil {
+                return
+            }
+            
+            if Int64(id.text!) == nil || Int64(phone.text!) == nil {
+                return
+            }
+            
             id.isEnabled = false
             school.isEnabled = false
             hometown.isEnabled = false
@@ -73,6 +81,12 @@ class DetailViewController: UIViewController {
             email.isEnabled = false
             modifyButton.setTitle("修改", for: .normal)
             deleteButton.isEnabled = true
+            
+            student?.id = Int64(id.text!)!
+            student?.school = school.text
+            student?.hometown = hometown.text
+            student?.phone = Int64(phone.text!)!
+            student?.email = email.text
         }
     }
     
