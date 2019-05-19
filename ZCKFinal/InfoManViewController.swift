@@ -92,10 +92,18 @@ class InfoManViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     */
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "detail", sender: tableView.cellForRow(at: indexPath))
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "insert") {
-            let dest = segue.destination as! InsertViewController;
-            dest.navigationItem.title = "添加新学生";
+            let dest = segue.destination as! InsertViewController
+            dest.navigationItem.title = "添加新学生"
+        } else if(segue.identifier == "detail") {
+            let dest = segue.destination as! DetailViewController
+            let cell = sender as? UITableViewCell
+            dest.navigationItem.title = cell?.textLabel?.text
         }
     }
 

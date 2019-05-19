@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EEE7DC52290E77B00E16B24 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE7DC42290E77B00E16B24 /* DetailViewController.swift */; };
 		4EF1391A22900A9B00C7DDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1391922900A9B00C7DDEF /* AppDelegate.swift */; };
 		4EF1391C22900A9B00C7DDEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1391B22900A9B00C7DDEF /* ViewController.swift */; };
 		4EF1391F22900A9B00C7DDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF1391D22900A9B00C7DDEF /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EEE7DC42290E77B00E16B24 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4EF1391622900A9A00C7DDEF /* ZCKFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCKFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF1391922900A9B00C7DDEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EF1391B22900A9B00C7DDEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				4EF1393422900C2400C7DDEF /* LoginViewController.swift */,
 				4EF139362290175200C7DDEF /* InsertViewController.swift */,
 				4EF13938229042A300C7DDEF /* Student.swift */,
+				4EEE7DC42290E77B00E16B24 /* DetailViewController.swift */,
 			);
 			path = ZCKFinal;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EEE7DC52290E77B00E16B24 /* DetailViewController.swift in Sources */,
 				4EF1393522900C2400C7DDEF /* LoginViewController.swift in Sources */,
 				4EF1393322900C1000C7DDEF /* ScoreFetchViewController.swift in Sources */,
 				4EF1392222900A9B00C7DDEF /* ZCKFinal.xcdatamodeld in Sources */,
