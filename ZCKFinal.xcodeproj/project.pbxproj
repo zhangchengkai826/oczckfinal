@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E055E792291515B00E7828A /* InsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E055E782291515A00E7828A /* InsertViewController.swift */; };
 		4EEE7DC52290E77B00E16B24 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE7DC42290E77B00E16B24 /* DetailViewController.swift */; };
 		4EF1391A22900A9B00C7DDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1391922900A9B00C7DDEF /* AppDelegate.swift */; };
 		4EF1391C22900A9B00C7DDEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1391B22900A9B00C7DDEF /* ViewController.swift */; };
@@ -17,11 +18,11 @@
 		4EF1393122900BF400C7DDEF /* InfoManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1393022900BF400C7DDEF /* InfoManViewController.swift */; };
 		4EF1393322900C1000C7DDEF /* ScoreFetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1393222900C1000C7DDEF /* ScoreFetchViewController.swift */; };
 		4EF1393522900C2400C7DDEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1393422900C2400C7DDEF /* LoginViewController.swift */; };
-		4EF139372290175200C7DDEF /* InsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF139362290175200C7DDEF /* InsertViewController.swift */; };
 		4EF13939229042A300C7DDEF /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF13938229042A300C7DDEF /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E055E782291515A00E7828A /* InsertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertViewController.swift; sourceTree = "<group>"; };
 		4EEE7DC42290E77B00E16B24 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4EF1391622900A9A00C7DDEF /* ZCKFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCKFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF1391922900A9B00C7DDEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		4EF1393022900BF400C7DDEF /* InfoManViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoManViewController.swift; sourceTree = "<group>"; };
 		4EF1393222900C1000C7DDEF /* ScoreFetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreFetchViewController.swift; sourceTree = "<group>"; };
 		4EF1393422900C2400C7DDEF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		4EF139362290175200C7DDEF /* InsertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertViewController.swift; sourceTree = "<group>"; };
 		4EF13938229042A300C7DDEF /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +68,7 @@
 		4EF1391822900A9B00C7DDEF /* ZCKFinal */ = {
 			isa = PBXGroup;
 			children = (
+				4E055E782291515A00E7828A /* InsertViewController.swift */,
 				4EF1391922900A9B00C7DDEF /* AppDelegate.swift */,
 				4EF1391B22900A9B00C7DDEF /* ViewController.swift */,
 				4EF1391D22900A9B00C7DDEF /* Main.storyboard */,
@@ -78,7 +79,6 @@
 				4EF1393022900BF400C7DDEF /* InfoManViewController.swift */,
 				4EF1393222900C1000C7DDEF /* ScoreFetchViewController.swift */,
 				4EF1393422900C2400C7DDEF /* LoginViewController.swift */,
-				4EF139362290175200C7DDEF /* InsertViewController.swift */,
 				4EF13938229042A300C7DDEF /* Student.swift */,
 				4EEE7DC42290E77B00E16B24 /* DetailViewController.swift */,
 			);
@@ -159,11 +159,11 @@
 				4EEE7DC52290E77B00E16B24 /* DetailViewController.swift in Sources */,
 				4EF1393522900C2400C7DDEF /* LoginViewController.swift in Sources */,
 				4EF1393322900C1000C7DDEF /* ScoreFetchViewController.swift in Sources */,
+				4E055E792291515B00E7828A /* InsertViewController.swift in Sources */,
 				4EF1392222900A9B00C7DDEF /* ZCKFinal.xcdatamodeld in Sources */,
 				4EF1393122900BF400C7DDEF /* InfoManViewController.swift in Sources */,
 				4EF1391C22900A9B00C7DDEF /* ViewController.swift in Sources */,
 				4EF1391A22900A9B00C7DDEF /* AppDelegate.swift in Sources */,
-				4EF139372290175200C7DDEF /* InsertViewController.swift in Sources */,
 				4EF13939229042A300C7DDEF /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
