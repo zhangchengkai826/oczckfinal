@@ -30,10 +30,17 @@
                                     <constraint firstAttribute="width" constant="46" id="J99-Yr-Qtq"/>
                                 </constraints>
                                 <state key="normal" title="查询"/>
+                                <connections>
+                                    <action selector="search:" destination="sXw-4F-fqX" eventType="touchUpInside" id="Mcm-NI-dcN"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rGf-l5-IlO">
                                 <rect key="frame" x="16" y="82" width="343" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="sXw-4F-fqX" id="Rh9-7p-5HR"/>
+                                    <outlet property="delegate" destination="sXw-4F-fqX" id="syV-Zh-OEb"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -51,6 +58,10 @@
                         <viewLayoutGuide key="safeArea" id="GgY-5E-QN9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="成绩查询" image="IC_ScoreFetch" id="23D-zZ-oht"/>
+                    <connections>
+                        <outlet property="searchInput" destination="oEE-IV-rRX" id="kx9-wQ-i3S"/>
+                        <outlet property="tableView" destination="rGf-l5-IlO" id="lyI-H9-2UA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2c4-xt-i6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -384,6 +395,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiO-O0-o6R">
                                 <rect key="frame" x="16" y="572" width="343" height="30"/>
                                 <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="login:" destination="Iqc-wO-pNF" eventType="touchUpInside" id="Ghx-UZ-Fy5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -401,6 +415,10 @@
                         <viewLayoutGuide key="safeArea" id="2tc-hz-Ffe"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="用户" image="IC_Login" id="ZN9-ll-Y8p"/>
+                    <connections>
+                        <outlet property="passwd" destination="gc2-Em-2Ul" id="926-v3-ReH"/>
+                        <outlet property="username" destination="63D-P0-Pmg" id="lUx-vs-1jT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yL0-3b-y3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
