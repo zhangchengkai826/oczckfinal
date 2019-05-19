@@ -145,6 +145,7 @@
                                 <rect key="frame" x="16" y="526" width="343" height="30"/>
                                 <state key="normal" title="修改"/>
                                 <connections>
+                                    <action selector="modifyThis:" destination="v72-4J-WYo" eventType="touchUpInside" id="2cJ-yh-Ipv"/>
                                     <action selector="submit:" destination="Tjd-JE-FaM" eventType="touchUpInside" id="rfO-yS-2Tg"/>
                                 </connections>
                             </button>
@@ -154,6 +155,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.036245735243500832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="deleteThis:" destination="v72-4J-WYo" eventType="touchUpInside" id="bca-xO-2F1"/>
                                     <action selector="submit:" destination="Tjd-JE-FaM" eventType="touchUpInside" id="6GZ-Uk-C7G"/>
                                 </connections>
                             </button>
@@ -188,9 +190,11 @@
                         <viewLayoutGuide key="safeArea" id="lz1-ok-zhK"/>
                     </view>
                     <connections>
+                        <outlet property="deleteButton" destination="MWk-D1-t2u" id="gYm-pC-3uz"/>
                         <outlet property="email" destination="JvT-A7-zlQ" id="2Wl-we-m82"/>
                         <outlet property="hometown" destination="xZi-L1-PjP" id="s3J-dL-YFd"/>
                         <outlet property="id" destination="0hR-Wh-n4G" id="RIW-TZ-1UW"/>
+                        <outlet property="modifyButton" destination="zH1-wP-sUk" id="Rav-PG-D4p"/>
                         <outlet property="name" destination="wQd-25-7PU" id="bVm-x2-6xw"/>
                         <outlet property="phone" destination="2Zs-Rh-Umg" id="vH2-SB-P6O"/>
                         <outlet property="school" destination="AZq-dB-FBm" id="ZId-ik-9Hw"/>
