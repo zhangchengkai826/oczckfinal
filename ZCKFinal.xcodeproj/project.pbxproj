@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4E055E792291515B00E7828A /* InsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E055E782291515A00E7828A /* InsertViewController.swift */; };
+		4EE7424222917C7C00B3DA0C /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7424122917C7C00B3DA0C /* Score.swift */; };
+		4EE7424422917C9800B3DA0C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7424322917C9800B3DA0C /* Account.swift */; };
 		4EEE7DC52290E77B00E16B24 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE7DC42290E77B00E16B24 /* DetailViewController.swift */; };
 		4EF1391A22900A9B00C7DDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1391922900A9B00C7DDEF /* AppDelegate.swift */; };
 		4EF1391C22900A9B00C7DDEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1391B22900A9B00C7DDEF /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		4E055E782291515A00E7828A /* InsertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertViewController.swift; sourceTree = "<group>"; };
+		4EE7424122917C7C00B3DA0C /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		4EE7424322917C9800B3DA0C /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		4EEE7DC42290E77B00E16B24 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4EF1391622900A9A00C7DDEF /* ZCKFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCKFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF1391922900A9B00C7DDEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				4EF1393422900C2400C7DDEF /* LoginViewController.swift */,
 				4EF13938229042A300C7DDEF /* Student.swift */,
 				4EEE7DC42290E77B00E16B24 /* DetailViewController.swift */,
+				4EE7424122917C7C00B3DA0C /* Score.swift */,
+				4EE7424322917C9800B3DA0C /* Account.swift */,
 			);
 			path = ZCKFinal;
 			sourceTree = "<group>";
@@ -157,9 +163,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EEE7DC52290E77B00E16B24 /* DetailViewController.swift in Sources */,
+				4EE7424422917C9800B3DA0C /* Account.swift in Sources */,
 				4EF1393522900C2400C7DDEF /* LoginViewController.swift in Sources */,
 				4EF1393322900C1000C7DDEF /* ScoreFetchViewController.swift in Sources */,
 				4E055E792291515B00E7828A /* InsertViewController.swift in Sources */,
+				4EE7424222917C7C00B3DA0C /* Score.swift in Sources */,
 				4EF1392222900A9B00C7DDEF /* ZCKFinal.xcdatamodeld in Sources */,
 				4EF1393122900BF400C7DDEF /* InfoManViewController.swift in Sources */,
 				4EF1391C22900A9B00C7DDEF /* ViewController.swift in Sources */,

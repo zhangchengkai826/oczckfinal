@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Account" representedClassName=".Account" syncable="YES" codeGenerationType="category">
+        <attribute name="passwd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Score" representedClassName=".Score" syncable="YES" codeGenerationType="category">
+        <attribute name="score" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="scores" inverseEntity="Student" syncable="YES"/>
+    </entity>
     <entity name="Student" representedClassName=".Student" syncable="YES" codeGenerationType="category">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hometown" optional="YES" attributeType="String" syncable="YES"/>
@@ -7,8 +16,11 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phone" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="school" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="scores" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Score" inverseName="student" inverseEntity="Score" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Student" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="Student" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="Score" positionX="-344.9765625" positionY="27.98828125" width="128" height="88"/>
+        <element name="Account" positionX="-199.9921875" positionY="-125.9921875" width="128" height="73"/>
     </elements>
 </model>
