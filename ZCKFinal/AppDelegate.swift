@@ -20,22 +20,157 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let context = AppDelegate.viewContext
         let student1 = Student(context: context)
-        student1.name = "Chengkai Zhang"
+        student1.name = "章成凯"
         student1.id = 2017302580093
         student1.citizenid = "330481199908265816"
-        student1.school = "School of Computer Science"
-        student1.hometown = "Hangzhou"
+        student1.school = "计算机学院"
+        student1.hometown = "杭州"
         student1.phone = 15927310675
         student1.email = "15927310675@163.com"
         
         let student2 = Student(context: context)
-        student2.name = "San Zhang"
+        student2.name = "胡宽东"
         student2.id = 2017302581923
         student2.citizenid = "356423199811120987"
-        student2.school = "School of Computer Science"
-        student2.hometown = "Wuhan"
+        student2.school = "计算机学院"
+        student2.hometown = "武汉"
         student2.phone = 15968930875
         student2.email = "15968930875@126.com"
+        
+        var student = Student(context: context)
+        student.name = "魏明宇"
+        student.id = 2016578907689
+        student.citizenid = "345676199807075467"
+        student.school = "计算机学院"
+        student.hometown = "Wuhan"
+        student.phone = 15968938790
+        student.email = "15968938790@163.com"
+        
+        student = Student(context: context)
+        student.name = "陈叔杰"
+        student.id = 2016571234589
+        student.citizenid = "344567199805075466"
+        student.school = "外语学院"
+        student.hometown = "武汉"
+        student.phone = 15963458790
+        student.email = "15963458790@163.com"
+        
+        student = Student(context: context)
+        student.name = "宋勇忠"
+        student.id = 2017573234534
+        student.citizenid = "342387199806185476"
+        student.school = "医学院"
+        student.hometown = "荆州"
+        student.phone = 15783458790
+        student.email = "15783458790@163.com"
+        
+        student = Student(context: context)
+        student.name = "何远平"
+        student.id = 2017238934534
+        student.citizenid = "342323199802225456"
+        student.school = "化学院"
+        student.hometown = "十堰"
+        student.phone = 15783678790
+        student.email = "15783678790@126.com"
+        
+        student = Student(context: context)
+        student.name = "张秉杰"
+        student.id = 2017235783434
+        student.citizenid = "345673199812225456"
+        student.school = "物理学院"
+        student.hometown = "荆门"
+        student.phone = 15784598790
+        student.email = "15784598790@126.com"
+        
+        student = Student(context: context)
+        student.name = "张清一"
+        student.id = 2017245634434
+        student.citizenid = "345457199911223456"
+        student.school = "哲学学院"
+        student.hometown = "武汉"
+        student.phone = 15784565790
+        student.email = "15784565790@163.com"
+        
+        student = Student(context: context)
+        student.name = "李维言"
+        student.id = 2016578634434
+        student.citizenid = "345356199710123446"
+        student.school = "物理学院"
+        student.hometown = "武汉"
+        student.phone = 15782345540
+        student.email = "15782345540@163.com"
+        
+        student = Student(context: context)
+        student.name = "张祥军"
+        student.id = 2017245635634
+        student.citizenid = "345234199910123236"
+        student.school = "哲学学院"
+        student.hometown = "成都"
+        student.phone = 15348705790
+        student.email = "15348705790@163.com"
+        
+        student = Student(context: context)
+        student.name = "李正为"
+        student.id = 2016578656734
+        student.citizenid = "345357199803123556"
+        student.school = "计算机学院"
+        student.hometown = "武汉"
+        student.phone = 15788765540
+        student.email = "15788765540@163.com"
+        
+        student = Student(context: context)
+        student.name = "袁奎红"
+        student.id = 2017245347634
+        student.citizenid = "345234199810143236"
+        student.school = "哲学学院"
+        student.hometown = "武汉"
+        student.phone = 15348568790
+        student.email = "15348568790@163.com"
+        
+        student = Student(context: context)
+        student.name = "李回宗"
+        student.id = 2016545656734
+        student.citizenid = "345357199911233556"
+        student.school = "文学院"
+        student.hometown = "荆门"
+        student.phone = 15786734540
+        student.email = "15786734540@163.com"
+        
+        student = Student(context: context)
+        student.name = "刘匀常"
+        student.id = 2017245234534
+        student.citizenid = "342312199811243236"
+        student.school = "物理学院"
+        student.hometown = "武汉"
+        student.phone = 15348568123
+        student.email = "15348568123@163.com"
+        
+        student = Student(context: context)
+        student.name = "李于军"
+        student.id = 2016234326734
+        student.citizenid = "342345199801233545"
+        student.school = "计算机学院"
+        student.hometown = "武汉"
+        student.phone = 15786723232
+        student.email = "15786723232@163.com"
+        
+        student = Student(context: context)
+        student.name = "李江治"
+        student.id = 2017242344534
+        student.citizenid = "543412199901213236"
+        student.school = "物理学院"
+        student.hometown = "荆州"
+        student.phone = 15312345623
+        student.email = "15312345623@126.com"
+        
+        student = Student(context: context)
+        student.name = "钟波"
+        student.id = 2016234453234
+        student.citizenid = "432345199803233534"
+        student.school = "数学院"
+        student.hometown = "成都"
+        student.phone = 15123213232
+        student.email = "15123213232@163.com"
         
         var score = Score(context: context)
         score.subject = "高等数学"
