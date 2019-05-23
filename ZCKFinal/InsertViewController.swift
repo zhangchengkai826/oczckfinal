@@ -12,12 +12,13 @@ class InsertViewController: UIViewController {
 
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var id: UITextField!
+    @IBOutlet weak var citizenId: UITextField!
     @IBOutlet weak var school: UITextField!
     @IBOutlet weak var hometown: UITextField!
     @IBOutlet weak var phone: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBAction func submit(_ sender: UIButton) {
-        if name.text == nil || id.text == nil || school.text == nil || hometown.text == nil || phone.text == nil || email.text == nil {
+        if name.text == nil || id.text == nil || citizenId.text == nil school.text == nil || hometown.text == nil || phone.text == nil || email.text == nil {
             return
         }
         

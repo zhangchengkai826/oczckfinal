@@ -13,6 +13,7 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var id: UITextField!
+    @IBOutlet weak var citizenId: UITextField!
     @IBOutlet weak var school: UITextField!
     @IBOutlet weak var hometown: UITextField!
     @IBOutlet weak var phone: UITextField!
