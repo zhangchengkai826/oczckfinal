@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let student1 = Student(context: context)
         student1.name = "Chengkai Zhang"
         student1.id = 2017302580093
+        student1.citizenid = "330481199908265816"
         student1.school = "School of Computer Science"
         student1.hometown = "Hangzhou"
         student1.phone = 15927310675
@@ -30,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let student2 = Student(context: context)
         student2.name = "San Zhang"
         student2.id = 2017302581923
+        student2.citizenid = "356423199811120987"
         student2.school = "School of Computer Science"
         student2.hometown = "Wuhan"
         student2.phone = 15968930875

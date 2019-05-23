@@ -46,6 +46,7 @@ class DetailViewController: UIViewController {
         student = fetchedResultsController.object(at: IndexPath(item: 0, section: 0))
         name.text = student?.name
         id.text = String(student!.id)
+        citizenId.text = student?.citizenid
         school.text = student?.school
         hometown.text = student?.hometown
         phone.text = String(student!.phone)
@@ -60,6 +61,7 @@ class DetailViewController: UIViewController {
     @IBAction func modifyThis(_ sender: UIButton) {
         if modifyButton.title(for: .normal) == "修改" {
             id.isEnabled = true
+            citizenId.isEnabled = true
             school.isEnabled = true
             hometown.isEnabled = true
             phone.isEnabled = true
@@ -67,7 +69,7 @@ class DetailViewController: UIViewController {
             modifyButton.setTitle("提交", for: .normal)
             deleteButton.isEnabled = false
         } else {
-            if id.text == nil || school.text == nil || hometown.text == nil || phone.text == nil || email.text == nil {
+            if id.text == nil || citizenId.text == nil || school.text == nil || hometown.text == nil || phone.text == nil || email.text == nil {
                 return
             }
             
@@ -76,6 +78,7 @@ class DetailViewController: UIViewController {
             }
             
             id.isEnabled = false
+            citizenId.isEnabled = false
             school.isEnabled = false
             hometown.isEnabled = false
             phone.isEnabled = false
@@ -84,6 +87,7 @@ class DetailViewController: UIViewController {
             deleteButton.isEnabled = true
             
             student?.id = Int64(id.text!)!
+            student?.citizenid = citizenId.text
             student?.school = school.text
             student?.hometown = hometown.text
             student?.phone = Int64(phone.text!)!

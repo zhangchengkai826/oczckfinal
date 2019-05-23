@@ -18,7 +18,7 @@ class InsertViewController: UIViewController {
     @IBOutlet weak var phone: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBAction func submit(_ sender: UIButton) {
-        if name.text == nil || id.text == nil || citizenId.text == nil school.text == nil || hometown.text == nil || phone.text == nil || email.text == nil {
+        if name.text == nil || id.text == nil || citizenId.text == nil || school.text == nil || hometown.text == nil || phone.text == nil || email.text == nil {
             return
         }
         
@@ -30,6 +30,7 @@ class InsertViewController: UIViewController {
         let student = Student(context: context)
         student.name = name.text
         student.id = Int64(id.text!)!
+        student.citizenid = citizenId.text
         student.school = school.text
         student.hometown = hometown.text
         student.phone = Int64(phone.text!)!
