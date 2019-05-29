@@ -279,5 +279,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var viewContext: NSManagedObjectContext {
         return persistentContainer.viewContext
     }
+    
+    static var bHasLogin: Bool = false
 }
 

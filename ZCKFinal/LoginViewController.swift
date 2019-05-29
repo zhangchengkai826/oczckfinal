@@ -15,10 +15,37 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        refreshContent()
+    }
+    
+    @IBAction func clickOutside(_ sender: UIControl) {
+        username.resignFirstResponder()
+        passwd.resignFirstResponder()
+    }
+    
+    func refreshContent() {
+        if !AppDelegate.bHasLogin {
+            hiLabel.isHidden = true
+            username.isHidden = false
+            passwd.isHidden = false
+            btnLogin.isHidden = false
+        } else {
+            if username.text == nil {
+                hiLabel.text = "Hi"
+            } else {
+                hiLabel.text = "Hi, " + username.text!
+            }
+            hiLabel.isHidden = false
+            username.isHidden = true
+            passwd.isHidden = true
+            btnLogin.isHidden = true
+        }
     }
     
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var passwd: UITextField!
+    @IBOutlet weak var hiLabel: UILabel!
+    @IBOutlet weak var btnLogin: UIButton!
     @IBAction func login(_ sender: UIButton) {
         if username.text == nil || passwd.text == nil {
             return
@@ -52,6 +79,8 @@ class LoginViewController: UIViewController {
             let alert = UIAlertController(title: "Succeed", message: "登录成功", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             self.present(alert, animated: true)
+            AppDelegate.bHasLogin = true
+            refreshContent()
         } else {
             let alert = UIAlertController(title: "Error", message: "用户名或密码错误", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "重试", style: .default))

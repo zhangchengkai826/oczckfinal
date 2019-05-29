@@ -396,7 +396,7 @@
         <scene sceneID="BR5-UV-i5t">
             <objects>
                 <viewController id="Iqc-wO-pNF" customClass="LoginViewController" customModule="ZCKFinal" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NMF-R9-Nua">
+                    <view key="view" contentMode="scaleToFill" id="NMF-R9-Nua" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -419,11 +419,24 @@
                                     <action selector="login:" destination="Iqc-wO-pNF" eventType="touchUpInside" id="Ghx-UZ-Fy5"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rf0-eU-PD3">
+                                <rect key="frame" x="152.5" y="323" width="70" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Hi, XXX">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="rf0-eU-PD3" firstAttribute="centerY" secondItem="NMF-R9-Nua" secondAttribute="centerY" id="Ju3-to-To7"/>
                             <constraint firstItem="63D-P0-Pmg" firstAttribute="leading" secondItem="2tc-hz-Ffe" secondAttribute="leading" constant="16" id="NQ5-bA-GUL"/>
                             <constraint firstItem="2tc-hz-Ffe" firstAttribute="bottom" secondItem="qiO-O0-o6R" secondAttribute="bottom" constant="16" id="OSj-jD-z9a"/>
+                            <constraint firstItem="rf0-eU-PD3" firstAttribute="centerX" secondItem="NMF-R9-Nua" secondAttribute="centerX" id="Qzt-kK-SIr"/>
                             <constraint firstItem="qiO-O0-o6R" firstAttribute="centerX" secondItem="63D-P0-Pmg" secondAttribute="centerX" id="TO5-YQ-5Sw"/>
                             <constraint firstItem="gc2-Em-2Ul" firstAttribute="centerX" secondItem="63D-P0-Pmg" secondAttribute="centerX" id="XOS-7l-1e6"/>
                             <constraint firstItem="qiO-O0-o6R" firstAttribute="width" secondItem="63D-P0-Pmg" secondAttribute="width" id="aUv-of-WO1"/>
@@ -433,9 +446,14 @@
                             <constraint firstItem="63D-P0-Pmg" firstAttribute="top" secondItem="2tc-hz-Ffe" secondAttribute="top" constant="16" id="zOj-Hk-kaf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2tc-hz-Ffe"/>
+                        <connections>
+                            <action selector="clickOutside:" destination="Iqc-wO-pNF" eventType="touchUpInside" id="68k-YQ-tJx"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="用户" image="IC_Login" id="ZN9-ll-Y8p"/>
                     <connections>
+                        <outlet property="btnLogin" destination="qiO-O0-o6R" id="M6v-37-dPn"/>
+                        <outlet property="hiLabel" destination="rf0-eU-PD3" id="V4U-FN-vrd"/>
                         <outlet property="passwd" destination="gc2-Em-2Ul" id="926-v3-ReH"/>
                         <outlet property="username" destination="63D-P0-Pmg" id="lUx-vs-1jT"/>
                     </connections>
