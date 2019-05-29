@@ -15,10 +15,6 @@ class InfoManViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var searchInput: UITextField!
     @IBAction func search(_ sender: UIButton) {
-        if searchInput.text == nil {
-            return
-        }
-        
         let context = AppDelegate.viewContext
         
         let request: NSFetchRequest<Student> = Student.fetchRequest()
@@ -26,7 +22,9 @@ class InfoManViewController: UIViewController, UITableViewDataSource, UITableVie
             key: "name", ascending: true,
             selector: #selector(NSString.localizedStandardCompare(_:))
             )]
-        request.predicate = NSPredicate(format: "name CONTAINS %@", searchInput.text!)
+        if searchInput.text != nil && searchInput.text != "" {
+          request.predicate = NSPredicate(format: "name CONTAINS %@", searchInput.text!)
+        }
         fetchedResultsController = NSFetchedResultsController<Student>(
             fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: "student")
         try? fetchedResultsController?.performFetch()
