@@ -14,7 +14,7 @@
         <scene sceneID="2fY-GP-jBD">
             <objects>
                 <viewController id="sXw-4F-fqX" customClass="ScoreFetchViewController" customModule="ZCKFinal" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="baV-ii-1U6">
+                    <view key="view" contentMode="scaleToFill" id="baV-ii-1U6" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -24,12 +24,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBh-hC-8o4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBh-hC-8o4">
                                 <rect key="frame" x="313" y="36" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="J99-Yr-Qtq"/>
                                 </constraints>
-                                <state key="normal" title="查询"/>
+                                <state key="normal" title="查询" image="search"/>
                                 <connections>
                                     <action selector="search:" destination="sXw-4F-fqX" eventType="touchUpInside" id="Mcm-NI-dcN"/>
                                 </connections>
@@ -56,6 +56,9 @@
                             <constraint firstItem="GgY-5E-QN9" firstAttribute="bottom" secondItem="rGf-l5-IlO" secondAttribute="bottom" id="zYH-lb-Vfu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GgY-5E-QN9"/>
+                        <connections>
+                            <action selector="tapOutside:" destination="sXw-4F-fqX" eventType="touchUpInside" id="1uK-4a-qyo"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="成绩查询" image="IC_ScoreFetch" id="23D-zZ-oht"/>
                     <connections>
@@ -82,12 +85,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dn-0C-BXe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dn-0C-BXe">
                                 <rect key="frame" x="328" y="72" width="31" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="31" id="LAI-nW-TJK"/>
                                 </constraints>
-                                <state key="normal" title="增加"/>
+                                <state key="normal" title="增加" image="insert"/>
                                 <connections>
                                     <segue destination="Tjd-JE-FaM" kind="show" identifier="insert" id="IPA-I4-NFp"/>
                                 </connections>
@@ -100,12 +103,12 @@
                                     <outlet property="delegate" destination="vY6-qc-DsD" id="AeZ-ih-yKg"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTF-lh-jdl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTF-lh-jdl">
                                 <rect key="frame" x="289" y="72" width="31" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="31" id="iig-uk-5zE"/>
                                 </constraints>
-                                <state key="normal" title="搜索"/>
+                                <state key="normal" title="搜索" image="search"/>
                                 <connections>
                                     <action selector="search:" destination="vY6-qc-DsD" eventType="touchUpInside" id="iUn-9B-4hQ"/>
                                 </connections>
@@ -468,5 +471,7 @@
         <image name="IC_InfoMan" width="30" height="30"/>
         <image name="IC_Login" width="30" height="30"/>
         <image name="IC_ScoreFetch" width="30" height="30"/>
+        <image name="insert" width="30" height="30"/>
+        <image name="search" width="30" height="30"/>
     </resources>
 </document>
