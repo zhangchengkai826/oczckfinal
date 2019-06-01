@@ -17,6 +17,16 @@ class InsertViewController: UIViewController {
     @IBOutlet weak var hometown: UITextField!
     @IBOutlet weak var phone: UITextField!
     @IBOutlet weak var email: UITextField!
+    @IBAction func tagOutside(_ sender: UIControl) {
+        name.resignFirstResponder()
+        id.resignFirstResponder()
+        citizenId.resignFirstResponder()
+        school.resignFirstResponder()
+        hometown.resignFirstResponder()
+        phone.resignFirstResponder()
+        email.resignFirstResponder()
+    }
+    
     @IBAction func submit(_ sender: UIButton) {
         if name.text == nil || id.text == nil || citizenId.text == nil || school.text == nil || hometown.text == nil || phone.text == nil || email.text == nil {
             return

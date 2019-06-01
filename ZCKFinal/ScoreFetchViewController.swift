@@ -42,6 +42,10 @@ class ScoreFetchViewController: UIViewController, UITableViewDataSource, UITable
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        refreshContent()
+    }
+    
     @IBAction func tapOutside(_ sender: UIControl) {
         searchInput.resignFirstResponder()
     }

@@ -18,6 +18,10 @@ class LoginViewController: UIViewController {
         refreshContent()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        refreshContent()
+    }
+    
     @IBAction func clickOutside(_ sender: UIControl) {
         username.resignFirstResponder()
         passwd.resignFirstResponder()

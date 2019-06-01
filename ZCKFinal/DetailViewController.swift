@@ -95,6 +95,15 @@ class DetailViewController: UIViewController {
         }
     }
     
+    @IBAction func tagOutside(_ sender: UIControl) {
+        name.resignFirstResponder()
+        id.resignFirstResponder()
+        citizenId.resignFirstResponder()
+        school.resignFirstResponder()
+        hometown.resignFirstResponder()
+        phone.resignFirstResponder()
+        email.resignFirstResponder()
+    }
     @IBAction func deleteThis(_ sender: UIButton) {
         AppDelegate.viewContext.delete(student!)
         if let vctlers = navigationController?.viewControllers {

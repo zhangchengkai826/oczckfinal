@@ -75,7 +75,7 @@
         <scene sceneID="nZS-6f-cGv">
             <objects>
                 <viewController id="vY6-qc-DsD" customClass="InfoManViewController" customModule="ZCKFinal" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ed5-lS-BI6">
+                    <view key="view" contentMode="scaleToFill" id="ed5-lS-BI6" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -129,10 +129,15 @@
                             <constraint firstItem="OVe-Ff-rDv" firstAttribute="top" secondItem="e3J-o5-VmX" secondAttribute="bottom" constant="8" id="xj7-aN-rHS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YKu-US-n85"/>
+                        <connections>
+                            <action selector="tagOutside:" destination="vY6-qc-DsD" eventType="touchUpInside" id="QB7-Jb-OcE"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="学生信息管理" image="IC_InfoMan" id="d7O-lQ-AlH"/>
                     <navigationItem key="navigationItem" title="学生信息管理" id="2R3-YQ-yOK"/>
                     <connections>
+                        <outlet property="insertBtn" destination="4Dn-0C-BXe" id="uF0-Bu-Ox8"/>
+                        <outlet property="searchBtn" destination="ZTF-lh-jdl" id="DDS-sI-HoI"/>
                         <outlet property="searchInput" destination="e3J-o5-VmX" id="g7m-Ag-kdf"/>
                         <outlet property="tableView" destination="OVe-Ff-rDv" id="s86-w6-zN4"/>
                         <segue destination="v72-4J-WYo" kind="show" identifier="detail" id="CWz-mC-aIc"/>
@@ -146,7 +151,7 @@
         <scene sceneID="Yjr-xt-0vC">
             <objects>
                 <viewController id="v72-4J-WYo" customClass="DetailViewController" customModule="ZCKFinal" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="a41-94-oOf">
+                    <view key="view" contentMode="scaleToFill" id="a41-94-oOf" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -242,6 +247,9 @@
                             <constraint firstItem="2Zs-Rh-Umg" firstAttribute="centerX" secondItem="wQd-25-7PU" secondAttribute="centerX" id="xDb-yA-k9q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lz1-ok-zhK"/>
+                        <connections>
+                            <action selector="tagOutside:" destination="v72-4J-WYo" eventType="touchUpInside" id="mKy-uS-HJ4"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="citizenId" destination="FBa-Py-A1F" id="397-U1-2Xq"/>
@@ -280,7 +288,7 @@
         <scene sceneID="Rp8-JZ-uL5">
             <objects>
                 <viewController id="Tjd-JE-FaM" customClass="InsertViewController" customModule="ZCKFinal" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="F1n-lV-tye">
+                    <view key="view" contentMode="scaleToFill" id="F1n-lV-tye" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -362,6 +370,9 @@
                             <constraint firstItem="TQw-3r-9L2" firstAttribute="centerX" secondItem="Zyk-aN-ieX" secondAttribute="centerX" id="zJC-kP-O2r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PmY-8k-rja"/>
+                        <connections>
+                            <action selector="tagOutside:" destination="Tjd-JE-FaM" eventType="touchUpInside" id="wJm-8r-uaN"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="citizenId" destination="DQS-ZN-b5L" id="fDw-o4-NRB"/>
@@ -414,7 +425,7 @@
                                 <rect key="frame" x="16" y="98" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiO-O0-o6R">
                                 <rect key="frame" x="16" y="572" width="343" height="30"/>
