@@ -59,6 +59,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="成绩查询" image="IC_ScoreFetch" id="23D-zZ-oht"/>
                     <connections>
+                        <outlet property="searchBtn" destination="gBh-hC-8o4" id="vK0-8R-k13"/>
                         <outlet property="searchInput" destination="oEE-IV-rRX" id="kx9-wQ-i3S"/>
                         <outlet property="tableView" destination="rGf-l5-IlO" id="lyI-H9-2UA"/>
                     </connections>

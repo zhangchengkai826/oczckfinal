@@ -173,23 +173,213 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         student.email = "15123213232@163.com"
         
         var score = Score(context: context)
-        score.subject = "高等数学"
+        score.subject = "信息系统导论"
+        score.score = 94
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "信息系统导论实验"
         score.score = 95
         score.student = student1
         
         score = Score(context: context)
-        score.subject = "大学物理"
+        score.subject = "计算机基础及应用"
+        score.score = 95
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "英语听说1"
+        score.score = 85
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "军事理论"
+        score.score = 91
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "大学英语2"
+        score.score = 91
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "高等数学B1"
+        score.score = 96
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "思想道德修养与法律基础"
+        score.score = 95
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "中国近代史纲要"
+        score.score = 93
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "古希腊语"
+        score.score = 94
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "英语听说2"
+        score.score = 96
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "C++程序设计"
+        score.score = 92
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "C++程序设计实验"
         score.score = 98
         score.student = student1
         
         score = Score(context: context)
-        score.subject = "高等数学"
+        score.subject = "计算机音乐"
+        score.score = 89
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "定向越野（高级）"
+        score.score = 92
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "大学英语3"
+        score.score = 89
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "高等数学B2"
+        score.score = 99
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "线性代数B"
+        score.score = 93
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "大学物理B（上）"
+        score.score = 92
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "马克思主义基本原理概论"
+        score.score = 90
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "创业管理与实践"
+        score.score = 90
+        score.student = student1
+        
+        score = Score(context: context)
+        score.subject = "信息系统导论"
+        score.score = 93
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "信息系统导论实验"
+        score.score = 91
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "计算机基础及应用"
+        score.score = 88
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "英语听说1"
+        score.score = 86
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "军事理论"
         score.score = 92
         score.student = student2
         
         score = Score(context: context)
-        score.subject = "大学英语"
+        score.subject = "大学英语2"
+        score.score = 85
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "高等数学B1"
+        score.score = 91
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "思想道德修养与法律基础"
+        score.score = 94
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "中国近代史纲要"
+        score.score = 94
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "古希腊语"
+        score.score = 81
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "英语听说2"
+        score.score = 91
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "C++程序设计"
+        score.score = 86
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "C++程序设计实验"
+        score.score = 92
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "计算机音乐"
+        score.score = 88
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "定向越野（高级）"
+        score.score = 94
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "大学英语3"
+        score.score = 86
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "高等数学B2"
         score.score = 96
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "线性代数B"
+        score.score = 93
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "大学物理B（上）"
+        score.score = 94
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "马克思主义基本原理概论"
+        score.score = 92
+        score.student = student2
+        
+        score = Score(context: context)
+        score.subject = "创业管理与实践"
+        score.score = 85
         score.student = student2
         
         var account = Account(context: context)

@@ -15,6 +15,7 @@ class ScoreFetchViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchInput: UITextField!
+    @IBOutlet weak var searchBtn: UIButton!
     @IBAction func search(_ sender: UIButton) {
         if searchInput.text == nil {
             return
@@ -38,6 +39,19 @@ class ScoreFetchViewController: UIViewController, UITableViewDataSource, UITable
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func refreshContent() {
+        if !AppDelegate.bHasLogin {
+            searchBtn.isEnabled = false
+            searchInput.isEnabled = false
+            let alert = UIAlertController(title: "Error", message: "请登录", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(alert, animated: true)
+        } else {
+            searchBtn.isEnabled = true
+            searchInput.isEnabled = true
+        }
     }
     
     func numberOfSectionsInTableView(sender: UITableView) -> Int {
